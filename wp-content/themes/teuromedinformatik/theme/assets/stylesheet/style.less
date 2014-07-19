@@ -52,20 +52,19 @@ body {
         background-position: 100% -112px;
     }
 }
-.detail {
+.page-detail {
     .modal-dialog {
         width: 634px;
         margin: 200px auto;
     }
 }
-.presentation {
+.page-presentation {
     .modal-dialog {
         width: 632px;
         margin: 200px auto;
     }
 }
 #div_carte {
-    height: 407px;
     width: 100%;
     margin: auto;
 }
@@ -323,7 +322,7 @@ body {
     }
 }
 .page-article {
-    &.detail {
+    &.page-detail {
         #wrap {
             .thumbnail-slider {
                 .well {
@@ -354,6 +353,182 @@ body {
                 text-indent: 20px;
                     &.first {
                         margin-bottom: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+.page-contact {
+    .main-left {
+        .page-title {
+        margin-bottom: 70px;
+        }
+        .form-contact {
+            .form-group {
+                width: 100%;
+                margin-bottom: 12px;
+                &.last {
+                    margin-bottom: 7px;
+                }
+                &.submit {
+                    float: right;
+                    width: inherit !important;
+                    .btn {
+                        margin-right:0 !important;
+                    }
+                }
+                .form-input {
+                    float: left;
+                    position: relative;
+                    &.right {
+                        margin-left: 30px;
+                    }
+                    &.w-100 {
+                        width: 100%;
+                    }
+                    &.w-70 {
+                        width: 370px;
+                    }
+                    &.w-60 {
+                        width: 365px;
+                    }
+                    &.w-50 {
+                        width: 300px;
+                    }
+                    &.w-40 {
+                        width: 235px;
+                    }
+                    &.w-30 {
+                        width: 230px;
+                    }
+                    label {
+                        display: none;
+                        position: absolute;
+                        top: 15px;
+                        left: 20px;
+                        color: #7f8d8d;
+                        font-family: "Roboto";
+                        font-size: 14px;
+                        span {
+                            display: block;
+                            color: #fa564d;
+                            top: 10px;
+                            position: absolute;
+                            top: -5px;
+                            right: -7px;
+                        }
+                    }
+                    input {
+                        width:100%;
+                        min-height: 40px;
+                        background-color: #ebeff1;
+                        border: none;
+                        -webkit-border-radius: 0;
+                        -moz-border-radius: 0;
+                        border-radius: 0;
+                        -webkit-box-shadow: none;
+                        -moz-box-shadow: none;
+                        box-shadow: none;
+                        padding: 15px 10px 15px 20px;
+                        color: #7f8d8d;
+                        font-family: "Roboto";
+                        font-size: 14px;
+                    }
+                    textarea {
+                        min-height: 245px;
+                        width: 100%;
+                        background-color: #ebeff1;
+                        border: none;
+                        -webkit-border-radius: 0;
+                        -moz-border-radius: 0;
+                        border-radius: 0;
+                        -webkit-box-shadow: none;
+                        -moz-box-shadow: none;
+                        box-shadow: none;
+                        padding: 15px 10px 15px 20px;
+                        color: #7f8d8d;
+                        font-family: "Roboto";
+                        font-size: 14px;
+                    }
+                }
+            }
+            .required {
+                color: #7f8d8d;
+                font-family: "Roboto";
+                font-size: 12px;
+                float: left;
+                span {
+                    color: #eb4738;
+                    padding-right: 5px;
+                }
+            }
+        }
+    }
+    .main-right {
+        .info-contact {
+            img {
+                display: block;
+                margin-bottom: 50px;
+            }
+            .logo-contact {
+                display: block;
+                width: 103px;
+                height: 71px;
+                background-image: url(../images/logo-contact.png);
+                background-repeat: no-repeat;
+                background-position: 0 50%;
+                margin-bottom: 25px;
+            }
+            p {
+                color: #7f8d8d;
+                font-family: "Roboto";
+                font-size: 16px;
+                margin-bottom: 20px;
+                line-height: 22px;
+                &.last {
+                    margin-bottom: 60px;
+                }
+            }
+            .social {
+                list-style: none;
+                width: 100%;
+                margin-bottom: 10px;
+                &.second {
+                    margin-bottom: 0;
+                }
+                >li {
+                    float: left;
+                    margin-right: 10px;
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                    a {
+                        display: block;
+                        height: 60px;
+                        width: 60px;
+                        background-repeat: no-repeat;
+                        background-position: 0 0;
+                        text-decoration: none;
+                        background-image: url(../images/svg/socials.svg);
+                        &.fb {
+                            background-position: 0 0;
+                        }
+                        &.g {
+                            background-position: -60px 0;
+                        }
+                        &.in {
+                            background-position: -120px 0;
+                        }
+                        &.tw {
+                            background-position: 0 -60px;
+                        }
+                        &.p {
+                            background-position: -60px -60px;
+                        }
+                        &.x {
+                            background-position: -120px -60px;
+                        }
                     }
                 }
             }

@@ -143,6 +143,27 @@ a img {
  * @description 
  *
  */
+input::-webkit-input-placeholder {
+  color: #7f8d8d;
+  font-family: "Roboto";
+  font-size: 14px;
+}
+input::-moz-placeholder {
+  color: #7f8d8d;
+  font-family: "Roboto";
+  font-size: 14px;
+}
+input:-moz-placeholder {
+  /* Older versions of Firefox */
+  color: #7f8d8d;
+  font-family: "Roboto";
+  font-size: 14px;
+}
+input:-ms-input-placeholder {
+  color: #7f8d8d;
+  font-family: "Roboto";
+  font-size: 14px;
+}
 #wrap .form-group {
   width: 100%;
   margin-bottom: 12px;
@@ -517,16 +538,15 @@ body .wrap-bg-top.affix {
   color: #ea4737;
   background-position: 100% -112px;
 }
-.detail .modal-dialog {
+.page-detail .modal-dialog {
   width: 634px;
   margin: 200px auto;
 }
-.presentation .modal-dialog {
+.page-presentation .modal-dialog {
   width: 632px;
   margin: 200px auto;
 }
 #div_carte {
-  height: 407px;
   width: 100%;
   margin: auto;
 }
@@ -758,12 +778,12 @@ body .wrap-bg-top.affix {
   background-image: url(../images/slider-article/row-right.png);
   margin-right: 0;
 }
-.page-article.detail #wrap .thumbnail-slider .well .carousel .carousel-inner .item-detail {
+.page-article.page-detail #wrap .thumbnail-slider .well .carousel .carousel-inner .item-detail {
   display: block;
   margin-bottom: 35px;
   width: 634px;
 }
-.page-article.detail #wrap .info .info-title {
+.page-article.page-detail #wrap .info .info-title {
   display: block;
   margin-bottom: 15px;
   color: #eb4737;
@@ -771,14 +791,180 @@ body .wrap-bg-top.affix {
   font-size: 28px;
   font-weight: 100;
 }
-.page-article.detail #wrap .info .info-description {
+.page-article.page-detail #wrap .info .info-description {
   color: #7f8d8d;
   font-family: "Roboto";
   font-size: 14px;
   text-indent: 20px;
 }
-.page-article.detail #wrap .info .info-description.first {
+.page-article.page-detail #wrap .info .info-description.first {
   margin-bottom: 30px;
+}
+.page-contact .main-left .page-title {
+  margin-bottom: 70px;
+}
+.page-contact .main-left .form-contact .form-group {
+  width: 100%;
+  margin-bottom: 12px;
+}
+.page-contact .main-left .form-contact .form-group.last {
+  margin-bottom: 7px;
+}
+.page-contact .main-left .form-contact .form-group.submit {
+  float: right;
+  width: inherit !important;
+}
+.page-contact .main-left .form-contact .form-group.submit .btn {
+  margin-right: 0 !important;
+}
+.page-contact .main-left .form-contact .form-group .form-input {
+  float: left;
+  position: relative;
+}
+.page-contact .main-left .form-contact .form-group .form-input.right {
+  margin-left: 30px;
+}
+.page-contact .main-left .form-contact .form-group .form-input.w-100 {
+  width: 100%;
+}
+.page-contact .main-left .form-contact .form-group .form-input.w-70 {
+  width: 370px;
+}
+.page-contact .main-left .form-contact .form-group .form-input.w-60 {
+  width: 365px;
+}
+.page-contact .main-left .form-contact .form-group .form-input.w-50 {
+  width: 300px;
+}
+.page-contact .main-left .form-contact .form-group .form-input.w-40 {
+  width: 235px;
+}
+.page-contact .main-left .form-contact .form-group .form-input.w-30 {
+  width: 230px;
+}
+.page-contact .main-left .form-contact .form-group .form-input label {
+  display: none;
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  color: #7f8d8d;
+  font-family: "Roboto";
+  font-size: 14px;
+}
+.page-contact .main-left .form-contact .form-group .form-input label span {
+  display: block;
+  color: #fa564d;
+  top: 10px;
+  position: absolute;
+  top: -5px;
+  right: -7px;
+}
+.page-contact .main-left .form-contact .form-group .form-input input {
+  width: 100%;
+  min-height: 40px;
+  background-color: #ebeff1;
+  border: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  padding: 15px 10px 15px 20px;
+  color: #7f8d8d;
+  font-family: "Roboto";
+  font-size: 14px;
+}
+.page-contact .main-left .form-contact .form-group .form-input textarea {
+  min-height: 245px;
+  width: 100%;
+  background-color: #ebeff1;
+  border: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  padding: 15px 10px 15px 20px;
+  color: #7f8d8d;
+  font-family: "Roboto";
+  font-size: 14px;
+}
+.page-contact .main-left .form-contact .required {
+  color: #7f8d8d;
+  font-family: "Roboto";
+  font-size: 12px;
+  float: left;
+}
+.page-contact .main-left .form-contact .required span {
+  color: #eb4738;
+  padding-right: 5px;
+}
+.page-contact .main-right .info-contact img {
+  display: block;
+  margin-bottom: 50px;
+}
+.page-contact .main-right .info-contact .logo-contact {
+  display: block;
+  width: 103px;
+  height: 71px;
+  background-image: url(../images/logo-contact.png);
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+  margin-bottom: 25px;
+}
+.page-contact .main-right .info-contact p {
+  color: #7f8d8d;
+  font-family: "Roboto";
+  font-size: 16px;
+  margin-bottom: 20px;
+  line-height: 22px;
+}
+.page-contact .main-right .info-contact p.last {
+  margin-bottom: 60px;
+}
+.page-contact .main-right .info-contact .social {
+  list-style: none;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.page-contact .main-right .info-contact .social.second {
+  margin-bottom: 0;
+}
+.page-contact .main-right .info-contact .social > li {
+  float: left;
+  margin-right: 10px;
+}
+.page-contact .main-right .info-contact .social > li:last-child {
+  margin-right: 0;
+}
+.page-contact .main-right .info-contact .social > li a {
+  display: block;
+  height: 60px;
+  width: 60px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  text-decoration: none;
+  background-image: url(../images/svg/socials.svg);
+}
+.page-contact .main-right .info-contact .social > li a.fb {
+  background-position: 0 0;
+}
+.page-contact .main-right .info-contact .social > li a.g {
+  background-position: -60px 0;
+}
+.page-contact .main-right .info-contact .social > li a.in {
+  background-position: -120px 0;
+}
+.page-contact .main-right .info-contact .social > li a.tw {
+  background-position: 0 -60px;
+}
+.page-contact .main-right .info-contact .social > li a.p {
+  background-position: -60px -60px;
+}
+.page-contact .main-right .info-contact .social > li a.x {
+  background-position: -120px -60px;
 }
 #carouselHome {
   position: absolute;
